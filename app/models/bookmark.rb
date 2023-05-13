@@ -9,6 +9,6 @@
 #  user_id    :integer
 #
 class Bookmark < ApplicationRecord
-  belongs_to :movie
+  belongs_to :movie, :required => true
   belongs_to :user
 end
